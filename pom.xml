@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>java4cpp.demos</groupId>
+	<artifactId>java4cpp-sample</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>java4cpp-sample</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.github.loicoudot.java4cpp</groupId>
+				<artifactId>java4cpp-maven-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<jarFiles>target/${project.artifactId}-${project.version}.jar</jarFiles>
+					<outputDirectory>cpp/java4cpp</outputDirectory>
+					<clean>true</clean>
+					<mappingsFile>base-mappings.xml</mappingsFile>
+					<templatesFile>base-templates.xml</templatesFile>
+					<nbThread>1</nbThread>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>com.github.loicoudot.java4cpp</groupId>
+						<artifactId>java4cpp-templates</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.8</version>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<outputDirectory>jars</outputDirectory>
+					<includeScope>runtime</includeScope>
+					<includeArtifactId>java4cpp-sample</includeArtifactId>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.github.loicoudot.java4cpp</groupId>
+			<artifactId>java4cpp-annotations</artifactId>
+			<version>0.1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>
