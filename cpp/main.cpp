@@ -4,6 +4,7 @@
 #include "allocation.h"
 #include "superclass.h"
 #include "enumeration.h"
+#include "arrays.h"
 #include "exceptionHandling.h"
 #include "benchmark.h"
 
@@ -199,7 +200,8 @@ int main(void)
 
 	//allAllocation();
 	//allSuperclass();
-	allEnumeration();
+	//allEnumeration();
+	allArrays();
 	//allExceptionHandling();
 	//allBenchmark();
 
