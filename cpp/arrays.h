@@ -9,7 +9,8 @@
 #define ARRAYS_H_
 
 void allArrays();
-void oneDimensionPrimitive();
+void oneDimPrimitive();
+void oneDimObject();
 
 
 #endif /* ARRAYS_H_ */

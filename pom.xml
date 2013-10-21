@@ -11,9 +11,10 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>	
 	</properties>
 	<build>
+		<directory>jars</directory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -31,13 +32,14 @@
 				<version>0.0.1-SNAPSHOT</version>
 				<executions>
 					<execution>
+						<phase>install</phase>
 						<goals>
 							<goal>generate</goal>
 						</goals>
 					</execution>
 				</executions>
 				<configuration>
-					<jarFiles>target/${project.artifactId}-${project.version}.jar</jarFiles>
+					<jarFiles>jars/${project.artifactId}-${project.version}.jar</jarFiles>
 					<outputDirectory>cpp/java4cpp</outputDirectory>
 					<clean>true</clean>
 					<mappingsFile>base-mappings.xml</mappingsFile>

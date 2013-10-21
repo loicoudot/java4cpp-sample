@@ -17,19 +17,33 @@ void allArrays()
 	std::cout << "================================" << std::endl;
 	std::cout << "Arrays" << std::endl;
 	std::cout << "================================" << std::endl;
-	oneDimensionPrimitive();
+	oneDimPrimitive();
+	oneDimObject();
 }
 
-void oneDimensionPrimitive()
+void oneDimPrimitive()
 {
 	std::vector<int> in;
 	in.push_back(-1); in.push_back(0); in.push_back(1);
 	std::vector<long long> out = Arrays().negate(in);
-	std::cout << "negate: " << out.size() << ", " << out[0] << ", " << out[1] << ", " << out[2];
+	std::cout << "negate: " << out.size() << ", " << out[0] << ", " << out[1] << ", " << out[2] << std::endl;
 
 	std::vector<bool> in1;
-	bool* a = &in1[0];
 	in1.push_back(true); in1.push_back(false);
 	std::vector<bool> out1 = Arrays().invert(in1);
-	std::cout << "invert: " << out1.size() << ", " << out1[0] << ", " << out1[1];
+	std::cout << "invert: " << out1.size() << ", " << out1[0] << ", " << out1[1] << std::endl;
+
+	std::vector<float> in2;
+	in2.push_back(0); in2.push_back(1); in2.push_back(2);
+	std::vector<double> out2 = Arrays().add(in2);
+	std::cout << "add: " << out2.size() << ", " << out2[0] << ", " << out2[1] << ", "<< out2[2] << std::endl;
+}
+
+void oneDimObject()
+{
+	std::vector<java::lang::Float> in;
+	in.push_back(java::lang::Float(1.0f)); in.push_back(java::lang::Float(2.3f));
+	std::vector<java::lang::Double> out = Arrays().add(in);
+	std::cout << "add: " << out.size() << ", " << out[0].doubleValue() << ", " << out[1].doubleValue() << std::endl;
+	std::cout << "isNull: " << (out[2].getJavaObject() == NULL) << std::endl;
 }

@@ -196,7 +196,7 @@ private:
 */
 int main(void)
 {
-	jw_addClassPath("/Users/maison/Documents/workspace/java4cpp-sample/target/java4cpp-sample-0.0.1-SNAPSHOT.jar");
+	jw_addClassPath("../jars/java4cpp-sample-0.0.1-SNAPSHOT.jar");
 
 	//allAllocation();
 	//allSuperclass();

@@ -28,4 +28,17 @@ public class Arrays {
         }
         return result;
     }
+
+    public Double[] add(Float[] in) {
+        Double[] result = new Double[in.length + 1];
+        for (int i = 0; i < in.length; ++i) {
+            result[i] = in[i] + 0.5;
+        }
+        result[in.length] = null;
+        return result;
+    }
+
+    public float[][] identity(float[][] in) {
+        return in;
+    }
 }
