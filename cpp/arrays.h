@@ -11,6 +11,7 @@
 void allArrays();
 void oneDimPrimitive();
 void oneDimObject();
-
+void twoDimPrimitive();
+void threeDimObject();
 
 #endif /* ARRAYS_H_ */

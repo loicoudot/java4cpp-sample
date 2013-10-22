@@ -41,4 +41,9 @@ public class Arrays {
     public float[][] identity(float[][] in) {
         return in;
     }
+
+    public String[][][] whatFor(String[][][] in) {
+        in[0][0][0] = "test";
+        return in;
+    }
 }

@@ -19,6 +19,8 @@ void allArrays()
 	std::cout << "================================" << std::endl;
 	oneDimPrimitive();
 	oneDimObject();
+	twoDimPrimitive();
+	threeDimObject();
 }
 
 void oneDimPrimitive()
@@ -46,4 +48,34 @@ void oneDimObject()
 	std::vector<java::lang::Double> out = Arrays().add(in);
 	std::cout << "add: " << out.size() << ", " << out[0].doubleValue() << ", " << out[1].doubleValue() << std::endl;
 	std::cout << "isNull: " << (out[2].getJavaObject() == NULL) << std::endl;
+}
+
+void twoDimPrimitive()
+{
+	std::vector<std::vector<float> > in;
+	std::vector<float> elem1;
+	elem1.push_back(1);
+	elem1.push_back(2);
+	in.push_back(elem1);
+	std::vector<float> elem2;
+	elem2.push_back(3);
+	elem2.push_back(4);
+	elem2.push_back(5);
+	in.push_back(elem2);
+	std::vector<std::vector<float> > out = Arrays().identity(in);
+	std::cout << "identity: " << out.size() << ", " << out[0].size() << ", " << out[1].size() << std::endl;
+	std::cout << out[0][0] << ", " << out[1][2] << std::endl;
+}
+
+void threeDimObject()
+{
+	std::vector<std::vector<std::vector<java::lang::String> > > in;
+	std::vector<std::vector<java::lang::String> > elem1;
+	std::vector<java::lang::String> elem2;
+	elem2.push_back(java::lang::String());
+	elem1.push_back(elem2);
+	in.push_back(elem1);
+	std::vector<std::vector<std::vector<java::lang::String> > > out = Arrays().whatFor(in);
+	std::cout << "three dims: " << out.size() << ", " << out[0].size() << ", " << out[0][0].size() << std::endl;
+	std::cout << out[0][0][0].length() << std::endl;
 }

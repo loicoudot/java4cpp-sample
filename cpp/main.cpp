@@ -198,12 +198,18 @@ int main(void)
 {
 	jw_addClassPath("../jars/java4cpp-sample-0.0.1-SNAPSHOT.jar");
 
+	try
+	{
 	//allAllocation();
 	//allSuperclass();
 	//allEnumeration();
 	allArrays();
 	//allExceptionHandling();
 	//allBenchmark();
+	} catch(std::exception& e)
+	{
+		std::cout << e.what();
+	}
 
 	return 0;
 }
