@@ -1,5 +1,5 @@
 #include <iostream>
-#include "javawrapper.h"
+#include "java4cpp/jvm_launcher.h"
 #include "java4cpp/java_classes.h"
 #include "allocation.h"
 #include "superclass.h"
@@ -196,17 +196,20 @@ private:
 */
 int main(void)
 {
+//	jw_setJrePath("/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries/libserver.dylib");
+	jw_setJrePath("/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/server/libjvm.dylib");
 	jw_addClassPath("../jars/java4cpp-sample-0.0.1-SNAPSHOT.jar");
 
 	try
 	{
-	//allAllocation();
-	//allSuperclass();
-	//allEnumeration();
-	allArrays();
-	//allExceptionHandling();
-	//allBenchmark();
-	} catch(std::exception& e)
+		allAllocation();
+		allSuperclass();
+		allEnumeration();
+		allArrays();
+		allExceptionHandling();
+		allBenchmark();
+	}
+	catch(std::exception& e)
 	{
 		std::cout << e.what();
 	}

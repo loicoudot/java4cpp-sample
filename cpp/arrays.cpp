@@ -69,13 +69,13 @@ void twoDimPrimitive()
 
 void threeDimObject()
 {
-	std::vector<std::vector<std::vector<java::lang::String> > > in;
-	std::vector<std::vector<java::lang::String> > elem1;
-	std::vector<java::lang::String> elem2;
-	elem2.push_back(java::lang::String());
+	std::vector<std::vector<std::vector<std::string> > > in;
+	std::vector<std::vector<std::string> > elem1;
+	std::vector<std::string> elem2;
+	elem2.push_back("string");
 	elem1.push_back(elem2);
 	in.push_back(elem1);
-	std::vector<std::vector<std::vector<java::lang::String> > > out = Arrays().whatFor(in);
+	std::vector<std::vector<std::vector<std::string> > > out = Arrays().whatFor(in);
 	std::cout << "three dims: " << out.size() << ", " << out[0].size() << ", " << out[0][0].size() << std::endl;
-	std::cout << out[0][0][0].length() << std::endl;
+	std::cout << out[0][0][0] << std::endl;
 }

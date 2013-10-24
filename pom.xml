@@ -43,7 +43,7 @@
 					<outputDirectory>cpp/java4cpp</outputDirectory>
 					<clean>true</clean>
 					<mappingsFile>base-mappings.xml</mappingsFile>
-					<templatesFile>base-templates.xml</templatesFile>
+					<templatesFile>base-templates.xml;string-templates.xml</templatesFile>
 					<nbThread>1</nbThread>
 				</configuration>
 				<dependencies>
