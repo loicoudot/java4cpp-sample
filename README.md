@@ -3,6 +3,8 @@ java4cpp-sample
 
 Demonstrate java4cpp capabilities.
 
+Gets full informations directly on the [java4cpp-core](https://github.com/loicoudot/java4cpp-core/wiki) page project.
+
 ## Instalation ##
 
 1. Download a copy of the project from git.
