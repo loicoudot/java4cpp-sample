@@ -7,6 +7,7 @@
 #include "arrays.h"
 #include "exceptionHandling.h"
 #include "benchmark.h"
+#include "multithread.h"
 
 int main(void)
 {
@@ -26,6 +27,7 @@ int main(void)
 		allArrays();
 		allExceptionHandling();
 		allBenchmark();
+		allMultithread();
 	}
 	catch(std::exception& e)
 	{

@@ -32,6 +32,8 @@
 		DF0FCD071836D8BD00C587C2 /* jvm_launcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF0FCCEC1836D8BD00C587C2 /* jvm_launcher.cpp */; };
 		DF0FCD081836D8BD00C587C2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF0FCCEE1836D8BD00C587C2 /* main.cpp */; };
 		DF0FCD091836D8BD00C587C2 /* superclass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF0FCCEF1836D8BD00C587C2 /* superclass.cpp */; };
+		DFE75480183AC58B008BC2CF /* multithread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFE7547E183AC58B008BC2CF /* multithread.cpp */; };
+		DFE75483183BF26A008BC2CF /* java4cpp_demos_Threads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFE75481183BF26A008BC2CF /* java4cpp_demos_Threads.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -101,6 +103,11 @@
 		DF0FCCEE1836D8BD00C587C2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../cpp/main.cpp; sourceTree = "<group>"; };
 		DF0FCCEF1836D8BD00C587C2 /* superclass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = superclass.cpp; path = ../../../cpp/superclass.cpp; sourceTree = "<group>"; };
 		DF0FCCF01836D8BD00C587C2 /* superclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = superclass.h; path = ../../../cpp/superclass.h; sourceTree = "<group>"; };
+		DFE7547E183AC58B008BC2CF /* multithread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = multithread.cpp; path = ../../../cpp/multithread.cpp; sourceTree = "<group>"; };
+		DFE7547F183AC58B008BC2CF /* multithread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = multithread.h; path = ../../../cpp/multithread.h; sourceTree = "<group>"; };
+		DFE75481183BF26A008BC2CF /* java4cpp_demos_Threads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = java4cpp_demos_Threads.cpp; sourceTree = "<group>"; };
+		DFE75482183BF26A008BC2CF /* java4cpp_demos_Threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java4cpp_demos_Threads.h; sourceTree = "<group>"; };
+		DFE7548418415D42008BC2CF /* java4cpp_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = java4cpp_thread.h; path = ../../../cpp/java4cpp_thread.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +140,9 @@
 		DF0FCCB11836D8A100C587C2 /* xcode5sample */ = {
 			isa = PBXGroup;
 			children = (
+				DFE7548418415D42008BC2CF /* java4cpp_thread.h */,
+				DFE7547E183AC58B008BC2CF /* multithread.cpp */,
+				DFE7547F183AC58B008BC2CF /* multithread.h */,
 				DF0FCCBB1836D8BD00C587C2 /* allocation.cpp */,
 				DF0FCCBC1836D8BD00C587C2 /* allocation.h */,
 				DF0FCCBD1836D8BD00C587C2 /* arrays.cpp */,
@@ -154,6 +164,8 @@
 		DF0FCCC51836D8BD00C587C2 /* java4cpp */ = {
 			isa = PBXGroup;
 			children = (
+				DFE75481183BF26A008BC2CF /* java4cpp_demos_Threads.cpp */,
+				DFE75482183BF26A008BC2CF /* java4cpp_demos_Threads.h */,
 				DF0FCCC61836D8BD00C587C2 /* java4cpp.hash */,
 				DF0FCCC71836D8BD00C587C2 /* java4cpp.log */,
 				DF0FCCC81836D8BD00C587C2 /* java4cpp_demos_Allocation.cpp */,
@@ -257,6 +269,7 @@
 				DF0FCD041836D8BD00C587C2 /* java_lang_Float.cpp in Sources */,
 				DF0FCCFD1836D8BD00C587C2 /* java4cpp_demos_InnerEnumeration.cpp in Sources */,
 				DF0FCCFF1836D8BD00C587C2 /* java4cpp_demos_UncheckedException.cpp in Sources */,
+				DFE75483183BF26A008BC2CF /* java4cpp_demos_Threads.cpp in Sources */,
 				DF0FCCFB1836D8BD00C587C2 /* java4cpp_demos_Enumeration.cpp in Sources */,
 				DF0FCD051836D8BD00C587C2 /* java_lang_Object.cpp in Sources */,
 				DF0FCD011836D8BD00C587C2 /* java_exceptions.cpp in Sources */,
@@ -275,6 +288,7 @@
 				DF0FCCFE1836D8BD00C587C2 /* java4cpp_demos_Superclass.cpp in Sources */,
 				DF0FCCF71836D8BD00C587C2 /* java4cpp_demos_Arrays.cpp in Sources */,
 				DF0FCD091836D8BD00C587C2 /* superclass.cpp in Sources */,
+				DFE75480183AC58B008BC2CF /* multithread.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
