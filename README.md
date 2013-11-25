@@ -9,13 +9,12 @@ Gets full informations directly on the [java4cpp-core](https://github.com/loicou
 
 1. Download a copy of the project from git.
 1. Generate proxies : type `mvn install` in the root directory.
-1. Create a C++ eclipse project and add all files from the cpp directory.
+1. Open the Xcode 5 project inside macosx directory or Visual Studio 10 project inside win32 directory.
 1. Build and Run !
 
 ### Prerequisite ###
 
- - Mac OS X 
- - Eclipse with JDT and CDT plugins
+ - Mac OS X with Xcode 5 or later / Windows with Visual Studio 10 or later
  - A Java installation (JRE or JDK, 1.6 minimum)
  - Maven command line tools (and internet connection)
 
@@ -30,7 +29,9 @@ This project contains two parts :
  - Calling methods
  - Managing hierarchie of classes
  - Deal with enums and arrays
- - Transparently catch Java exception as regular C++ exception
+ - Translation of Java exception as regular C++ exception
+ - Multi-threadings environment
+ - Dynamic class loading
  
 The `pom.xml` file instruct maven to compile the Java classes into a jar and then execute 
  java4cpp on this jar to generate C++ proxies inside the java4cpp directory.
