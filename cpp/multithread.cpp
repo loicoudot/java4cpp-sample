@@ -19,77 +19,85 @@ using namespace java4cpp::demos;
 
 void allMultithread()
 {
-	std::cout << "================================" << std::endl;
-	std::cout << "Multithread" << std::endl;
-	std::cout << "================================" << std::endl;
-	threadsafe();
-	benchmark();
+   std::cout << "================================" << std::endl;
+   std::cout << "Multithread" << std::endl;
+   std::cout << "================================" << std::endl;
+   threadsafe();
+   benchmark();
 }
 
-callback_t callbackThreadsafe(void *in) {
-    Threads* thread = (Threads*)in;
-    for(int i = 0; i < NB_ITER; ++i) {
-        thread->threadsafe();
-    }
-    
-	return 0;
+callback_t callbackThreadsafe(void *in)
+{
+   Threads* thread = (Threads*)in;
+   for(int i = 0; i < NB_ITER; ++i)
+   {
+      thread->threadsafe();
+   }
+
+   return 0;
 }
 
 void threadsafe()
 {
-    Threads thread;
-	thread_t threads[NB_THREAD];
-	for(int i = 0; i < NB_THREAD; ++i) {
-		thread_create(threads[i], callbackThreadsafe, &thread);
-	}
-    
-	for(int i = 0; i < NB_THREAD; ++i) {
-		thread_wait_close(threads[i]);
-		thread_delete(threads[i]);
-	}
-    
-    std::cout << "threadsafe: " << (thread.getIter() == NB_THREAD*NB_ITER) << std::endl;
+   Threads thread;
+   thread_t threads[NB_THREAD];
+   for (int i = 0; i < NB_THREAD; ++i)
+   {
+      thread_create(threads[i], callbackThreadsafe, &thread);
+   }
+
+   for (int i = 0; i < NB_THREAD; ++i)
+   {
+      thread_wait_close(threads[i]); thread_delete(threads[i]);
+   }
+
+   std::cout << "threadsafe: " << (thread.getIter() == NB_THREAD * NB_ITER) << std::endl;
 }
 
-callback_t callbackBenchmark(void *in) {
-	Benchmark benchmark;
-	time_t start = time(NULL);
-	long nbCall = 0;
-    double elapsed;
-	do {
-        for (int i = 0; i < 10000; ++i) {
-            benchmark.noArgMethod();
-        }
-        ++nbCall;
-        elapsed = difftime(time(NULL),start);
-	} while ( elapsed < LENGTH);
-	*((long*)in) = (nbCall * 10000) / elapsed;
-    return 0;
+callback_t callbackBenchmark(void *in)
+{
+   Benchmark benchmark;
+   time_t start = time(NULL);
+   long nbCall = 0;
+   double elapsed;
+   do
+   {
+      for (int i = 0; i < 10000; ++i)
+      {
+         benchmark.noArgMethod();
+      }
+      ++nbCall;
+      elapsed = difftime(time(NULL),start);
+   }while ( elapsed < LENGTH);
+   *((long*)in) = (nbCall * 10000) / elapsed;
+   return 0;
 }
 
 void benchmark()
 {
-	for(int nbThread = 1; nbThread < 5; ++nbThread)
-	{
-		thread_t* threads = new thread_t[nbThread];
-		long* results = new long[nbThread];
-		for(int i = 0; i < nbThread; ++i) {
-			thread_create(threads[i], callbackBenchmark, results+i);
-		}
-        
-		for(int i = 0; i < nbThread; ++i) {
-			thread_wait_close(threads[i]);
-			thread_delete(threads[i]);
-		}
-        
-		std::cout << "benchmark " << nbThread << " threads:" << std::endl;
-		long total = 0;
-		for(int i = 0; i < nbThread; ++i) {
-			std::cout << "thread " << i << ": " << results[i] << " calls/sec" << std::endl;
-			total += results[i];
-		}
-		std::cout << "total: " << total << " calls/sec" << std::endl;
-		delete[] results;
-		delete[] threads;
-	}
+   for (int nbThread = 1; nbThread < 5; ++nbThread)
+   {
+      thread_t* threads = new thread_t[nbThread];
+      long* results = new long[nbThread];
+      for (int i = 0; i < nbThread; ++i)
+      {
+         thread_create(threads[i], callbackBenchmark, results + i);
+      }
+
+      for (int i = 0; i < nbThread; ++i)
+      {
+         thread_wait_close(threads[i]); thread_delete(threads[i]);
+      }
+
+      std::cout << "benchmark " << nbThread << " threads:" << std::endl;
+      long total = 0;
+      for (int i = 0; i < nbThread; ++i)
+      {
+         std::cout << "thread " << i << ": " << results[i] << " calls/sec" << std::endl;
+         total += results[i];
+      }
+      std::cout << "total: " << total << " calls/sec" << std::endl;
+      delete[] results;
+      delete[] threads;
+   }
 }

@@ -14,32 +14,32 @@ using namespace java4cpp::demos;
 
 void allEnumeration()
 {
-	std::cout << "================================" << std::endl;
-	std::cout << "Enumeration" << std::endl;
-	std::cout << "================================" << std::endl;
-	enumeration();
-	nullValue();
-	innerEnumeration();
+   std::cout << "================================" << std::endl;
+   std::cout << "Enumeration" << std::endl;
+   std::cout << "================================" << std::endl;
+   enumeration();
+   nullValue();
+   innerEnumeration();
 }
 
 void enumeration()
 {
-	std::cout << "ONE enum value: " << EnumerationEnum::ONE << std::endl;
-	std::cout << "ONE getEnumString: " << Enumeration::getEnumString(EnumerationEnum::ONE) << std::endl;
-	Enumeration oneObject(EnumerationEnum::ONE);
-	std::cout << "ONE getValue: " << oneObject.getValue() << std::endl;
+   std::cout << "ONE enum value: " << EnumerationEnum::ONE << std::endl;
+   std::cout << "ONE getEnumString: " << Enumeration::getEnumString(EnumerationEnum::ONE) << std::endl;
+   Enumeration oneObject(EnumerationEnum::ONE);
+   std::cout << "ONE getValue: " << oneObject.getValue() << std::endl;
 }
 
 void nullValue()
 {
-	std::cout << "NULL_VALUE enum value: " << EnumerationEnum::NULL_VALUE << std::endl;
-	std::cout << "NULL_VALUE getEnumString: " << Enumeration::getEnumString(EnumerationEnum::NULL_VALUE) << std::endl;
-	Enumeration nullObject(EnumerationEnum::NULL_VALUE);
-	std::cout << "NULL_VALUE is null object: " << (nullObject.getJavaObject() == NULL) << std::endl;
+   std::cout << "NULL_VALUE enum value: " << EnumerationEnum::NULL_VALUE << std::endl;
+   std::cout << "NULL_VALUE getEnumString: " << Enumeration::getEnumString(EnumerationEnum::NULL_VALUE) << std::endl;
+   Enumeration nullObject(EnumerationEnum::NULL_VALUE);
+   std::cout << "NULL_VALUE is null object: " << (nullObject.getJavaObject() == NULL) << std::endl;
 }
 
 void innerEnumeration()
 {
-	InnerEnumeration::Enumeration::EnumerationEnum result = InnerEnumeration::enumAsParameter(InnerEnumeration::Enumeration::ONE, InnerEnumeration::Enumeration::TWO);
-	std::cout << "Return value: " << InnerEnumeration::Enumeration::getEnumString(result) << std::endl;
+   InnerEnumeration::Enumeration::EnumerationEnum result = InnerEnumeration::enumAsParameter(InnerEnumeration::Enumeration::ONE, InnerEnumeration::Enumeration::TWO);
+   std::cout << "Return value: " << InnerEnumeration::Enumeration::getEnumString(result) << std::endl;
 }

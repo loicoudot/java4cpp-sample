@@ -14,5 +14,4 @@ void statically();
 void dynamically();
 void memoryLeak();
 
-
 #endif /* ALLOCATION_H_ */
