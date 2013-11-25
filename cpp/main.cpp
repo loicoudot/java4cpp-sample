@@ -6,6 +6,7 @@
 #include "enumeration.h"
 #include "arrays.h"
 #include "exceptionHandling.h"
+#include "classloading.h"
 #include "benchmark.h"
 #include "multithread.h"
 
@@ -26,12 +27,13 @@ int main(void)
 		allEnumeration();
 		allArrays();
 		allExceptionHandling();
+		allClassloading();
 		allBenchmark();
 		allMultithread();
 	}
 	catch(std::exception& e)
 	{
-		std::cout << e.what();
+		std::cout << e.what() << std::endl;
 	}
 
 	return 0;
