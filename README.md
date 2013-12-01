@@ -18,6 +18,10 @@ Gets full informations directly on the [java4cpp-core](https://github.com/loicou
  - A Java installation (JRE or JDK, 1.6 minimum)
  - Maven command line tools (and internet connection)
 
+### Other platform ###
+
+Adding other platform is very easy, it's just necessary to add to your favorite IDE or build process all the files inside `cpp` folder, give a valid `jni.h` files for your platform and modifiy `main.cpp` to enter a valid path to your installed JRE or JDK.
+
 ## How It Works ##
 
 This project contains two parts :
