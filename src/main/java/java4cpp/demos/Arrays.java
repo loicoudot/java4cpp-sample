@@ -46,4 +46,8 @@ public class Arrays {
         in[0][0][0] = "test";
         return in;
     }
+
+    public String diacritic() {
+        return "&é§èçà$€";
+    }
 }

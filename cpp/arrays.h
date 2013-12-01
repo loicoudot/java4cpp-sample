@@ -13,5 +13,6 @@ void oneDimPrimitive();
 void oneDimObject();
 void twoDimPrimitive();
 void threeDimObject();
+void strings();
 
 #endif /* ARRAYS_H_ */

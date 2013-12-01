@@ -21,6 +21,7 @@ void allArrays()
    oneDimObject();
    twoDimPrimitive();
    threeDimObject();
+   strings();
 }
 
 void oneDimPrimitive()
@@ -84,4 +85,9 @@ void threeDimObject()
    std::vector < std::vector<std::vector<std::string> > > out = Arrays().whatFor(in);
    std::cout << "three dims: " << out.size() << ", " << out[0].size() << ", " << out[0][0].size() << std::endl;
    std::cout << out[0][0][0] << std::endl;
+}
+
+void strings()
+{
+   std::cout << "diacritics " << Arrays().diacritic() << std::endl;
 }
