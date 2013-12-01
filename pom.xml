@@ -68,7 +68,7 @@
 				<version>2.8</version>
 				<executions>
 					<execution>
-						<phase>install</phase>
+						<phase>compile</phase>
 						<goals>
 							<goal>copy-dependencies</goal>
 						</goals>
