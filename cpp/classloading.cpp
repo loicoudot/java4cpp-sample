@@ -33,7 +33,7 @@ void dynamicClassloader()
    }
    std::cout << std::endl;
 
-   jw_addClassPath("../../jars/slf4j-api-1.7.5.jar");
+   jvm_addClassPath("../../jars/slf4j-api-1.7.5.jar");
 
    std::cout << "now in class path: ";
    try

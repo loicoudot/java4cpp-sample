@@ -47,7 +47,7 @@
 					<outputDirectory>cpp/java4cpp</outputDirectory>
 					<clean>true</clean>
 					<mappingsFile>base-mappings.xml;cpp/slf4j-mappings.xml</mappingsFile>
-					<templatesFile>base-templates.xml;string-templates.xml</templatesFile>
+					<templatesFile>base-templates.xml;jnistring-templates.xml</templatesFile>
 					<nbThread>1</nbThread>
 				</configuration>
 				<dependencies>

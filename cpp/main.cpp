@@ -13,12 +13,12 @@
 int main(void)
 {
 #ifdef WIN32
-   jw_setJrePath("c:/Program Files (x86)/Java/jre7/bin/client/jvm.dll" );
+   jvm_setJrePath("c:/Program Files (x86)/Java/jre7/bin/client/jvm.dll" );
 #else
-   jw_setJrePath("/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries/libserver.dylib");
+   jvm_setJrePath("/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries/libserver.dylib");
 #endif
 
-   jw_addClassPath("../../jars/java4cpp-sample-1.0.0-SNAPSHOT.jar");
+   jvm_addClassPath("../../jars/java4cpp-sample-1.0.0-SNAPSHOT.jar");
 
    try
    {
