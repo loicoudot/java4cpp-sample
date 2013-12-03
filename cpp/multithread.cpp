@@ -69,7 +69,7 @@ callback_t callbackBenchmark(void *in)
       ++nbCall;
       elapsed = difftime(time(NULL),start);
    }while ( elapsed < LENGTH);
-   *((long*)in) = (nbCall * 10000) / elapsed;
+   *((long*)in) = (long)((nbCall * 10000) / elapsed);
    return 0;
 }
 
