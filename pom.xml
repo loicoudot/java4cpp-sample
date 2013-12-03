@@ -33,7 +33,7 @@
 			<plugin>
 				<groupId>com.github.loicoudot.java4cpp</groupId>
 				<artifactId>java4cpp-maven-plugin</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>1.0.1</version>
 				<executions>
 					<execution>
 						<phase>install</phase>
