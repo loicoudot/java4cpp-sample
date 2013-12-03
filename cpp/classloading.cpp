@@ -27,7 +27,7 @@ void dynamicClassloader()
    {
       org::slf4j::helpers::BasicMarkerFactory factory;
       std::cout << "ko";
-   } catch (std::exception& e)
+   } catch (std::exception& )
    {
       std::cout << "ok";
    }

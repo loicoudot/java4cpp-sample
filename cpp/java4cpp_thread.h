@@ -7,7 +7,7 @@
 #   define thread_t                         HANDLE
 #   define thread_create(thrd, fct, param)  (thrd) = CreateThread(NULL,0,(LPTHREAD_START_ROUTINE)(fct),(param),0,NULL)
 #   define thread_delete(thrd)              CloseHandle(thrd);
-#   define thread_wait_close(thrd)          WaitForSingleObjects(thrd, INFINITE)
+#   define thread_wait_close(thrd)          WaitForSingleObject(thrd, INFINITE)
 
 #   define mutex_t                          CRITICAL_SECTION
 #   define mutex_init(mutex)                InitializeCriticalSection(mutex)
