@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\java4cpp">
+      <UniqueIdentifier>{02a103f6-4555-4e67-a6b5-2b8fcd64188b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\cpp\allocation.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\arrays.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\benchmark.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\classloading.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\enumeration.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\exceptionHandling.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp_thread.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\multithread.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\superclass.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java_classes.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java_exceptions.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java_lang_Class.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java_lang_Double.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java_lang_Float.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java_lang_Object.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java_lang_Throwable.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java_util_Iterator.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_Allocation.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_Arrays.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_Baseclass.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_Benchmark.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_CheckedException.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_Enumeration.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_EnumerationEnum.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_ExceptionClass.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_InnerEnumeration.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_Superclass.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_Threads.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_demos_UncheckedException.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\java4cpp_runtime.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\jvm_launcher.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\org_slf4j_helpers_BasicMarkerFactory.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpp\java4cpp\org_slf4j_Marker.h">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\cpp\allocation.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\arrays.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\benchmark.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\classloading.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\enumeration.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\exceptionHandling.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\multithread.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\superclass.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java_exceptions.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java_lang_Class.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java_lang_Double.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java_lang_Float.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java_lang_Object.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java_lang_Throwable.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java_util_Iterator.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_Allocation.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_Arrays.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_Baseclass.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_Benchmark.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_CheckedException.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_Enumeration.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_ExceptionClass.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_InnerEnumeration.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_Superclass.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_Threads.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_demos_UncheckedException.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\java4cpp_runtime.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\jvm_launcher.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\org_slf4j_helpers_BasicMarkerFactory.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpp\java4cpp\org_slf4j_Marker.cpp">
+      <Filter>Fichiers sources\java4cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
