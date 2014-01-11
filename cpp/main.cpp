@@ -9,10 +9,11 @@
 #include "classloading.h"
 #include "benchmark.h"
 #include "multithread.h"
+#include "containers.h"
 
 int main(void)
 {
-#ifdef WIN32
+#ifdef _WIN32
    //jvm_setJrePath("c:/Program Files (x86)/Java/jre7/bin/client/jvm.dll" );
    jvm_setJrePath("c:/Program Files (x86)/Java/jdk1.7.0_45/jre/bin/client/jvm.dll" );
 #else
@@ -30,6 +31,7 @@ int main(void)
       allExceptionHandling();
       allClassloading();
       allBenchmark();
+      allContainers();
       allMultithread();
    } catch (std::exception& e)
    {
