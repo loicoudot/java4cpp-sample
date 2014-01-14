@@ -15,4 +15,8 @@ public enum Enumeration {
     public int getValue() {
         return value;
     }
+
+    public static Enumeration identity(Enumeration in) {
+        return in;
+    }
 }

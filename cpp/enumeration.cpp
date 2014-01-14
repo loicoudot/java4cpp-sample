@@ -30,6 +30,7 @@ void enumeration()
    assertThat(Enumeration::valueOf("TWO")).isEqualTo(EnumerationEnum::TWO);
    assertThat(Enumeration(EnumerationEnum::THREE).toEnum()).isEqualTo(EnumerationEnum::THREE);
    assertThat(Enumeration(EnumerationEnum::THREE).getValue()).isEqualTo(30);
+   assertThat(Enumeration::identity(EnumerationEnum::ONE)).isEqualTo(EnumerationEnum::ONE);
    std::cout << "ok" << std::endl;
 }
 
@@ -39,6 +40,7 @@ void nullValue()
    assertThat(Enumeration::getEnumString(EnumerationEnum::NULL_VALUE)).isEqualTo("NULL_VALUE");
    assertThat(Enumeration(EnumerationEnum::NULL_VALUE).toEnum()).isEqualTo(EnumerationEnum::NULL_VALUE);
    assertThat(Enumeration(EnumerationEnum::NULL_VALUE).getJavaObject()).isNull();
+   assertThat(Enumeration::identity(EnumerationEnum::NULL_VALUE)).isEqualTo(EnumerationEnum::NULL_VALUE);
    std::cout << "ok" << std::endl;
 }
 
@@ -47,5 +49,7 @@ void innerEnumeration()
    std::cout << "innerEnumeration: ";
    InnerEnumeration::Enumeration::EnumerationEnum result = InnerEnumeration::enumAsParameter(InnerEnumeration::Enumeration::ONE, InnerEnumeration::Enumeration::TWO);
    assertThat(result).isEqualTo(InnerEnumeration::Enumeration::EnumerationEnum::THREE);
+   assertThat(InnerEnumeration::Enumeration::identity(InnerEnumeration::Enumeration::ONE)).isEqualTo(InnerEnumeration::Enumeration::ONE);
+   assertThat(InnerEnumeration::Enumeration::identity(InnerEnumeration::Enumeration::NULL_VALUE)).isEqualTo(InnerEnumeration::Enumeration::NULL_VALUE);
    std::cout << "ok" << std::endl;
 }
