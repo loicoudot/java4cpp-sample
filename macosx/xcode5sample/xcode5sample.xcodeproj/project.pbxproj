@@ -45,6 +45,7 @@
 		DF42DA94187F62B8007E54A4 /* jvm_launcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF42DA75187F62B8007E54A4 /* jvm_launcher.cpp */; };
 		DF42DA95187F62B8007E54A4 /* org_slf4j_helpers_BasicMarkerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF42DA77187F62B8007E54A4 /* org_slf4j_helpers_BasicMarkerFactory.cpp */; };
 		DF42DA96187F62B8007E54A4 /* org_slf4j_Marker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF42DA79187F62B8007E54A4 /* org_slf4j_Marker.cpp */; };
+		DF42DA9C18855D3A007E54A4 /* leak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF42DA9B18855D3A007E54A4 /* leak.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -134,6 +135,8 @@
 		DF42DA79187F62B8007E54A4 /* org_slf4j_Marker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = org_slf4j_Marker.cpp; path = ../../../cpp/java4cpp/org_slf4j_Marker.cpp; sourceTree = "<group>"; };
 		DF42DA7A187F62B8007E54A4 /* org_slf4j_Marker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = org_slf4j_Marker.h; path = ../../../cpp/java4cpp/org_slf4j_Marker.h; sourceTree = "<group>"; };
 		DF42DA97187F6313007E54A4 /* testsunit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = testsunit.h; path = ../../cpp/testsunit.h; sourceTree = "<group>"; };
+		DF42DA9918855CD9007E54A4 /* leak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = leak.h; path = ../../cpp/leak.h; sourceTree = "<group>"; };
+		DF42DA9B18855D3A007E54A4 /* leak.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = leak.cpp; path = ../../../cpp/leak.cpp; sourceTree = "<group>"; };
 		DFB81A471858DC4500AC23EA /* allocation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = allocation.cpp; path = ../../cpp/allocation.cpp; sourceTree = SOURCE_ROOT; };
 		DFCF6F6618440A8500512DEB /* classloading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = classloading.cpp; path = ../../cpp/classloading.cpp; sourceTree = SOURCE_ROOT; };
 		DFCF6F6718440A8500512DEB /* classloading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = classloading.h; path = ../../cpp/classloading.h; sourceTree = SOURCE_ROOT; };
@@ -173,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				DF0FCCEE1836D8BD00C587C2 /* main.cpp */,
+				DF42DA9B18855D3A007E54A4 /* leak.cpp */,
+				DF42DA9918855CD9007E54A4 /* leak.h */,
 				DFB81A471858DC4500AC23EA /* allocation.cpp */,
 				DF0FCCBC1836D8BD00C587C2 /* allocation.h */,
 				DF0FCCEF1836D8BD00C587C2 /* superclass.cpp */,
@@ -329,6 +334,7 @@
 				DF42DA1C187F6284007E54A4 /* superclass.cpp in Sources */,
 				DF42DA7B187F62B8007E54A4 /* java_exceptions.cpp in Sources */,
 				DF42DA7F187F62B8007E54A4 /* java_lang_Object.cpp in Sources */,
+				DF42DA9C18855D3A007E54A4 /* leak.cpp in Sources */,
 				DF42DA81187F62B8007E54A4 /* java_lang_Throwable.cpp in Sources */,
 				DF42DA8B187F62B8007E54A4 /* java4cpp_demos_Containers.cpp in Sources */,
 				DF42DA86187F62B8007E54A4 /* java4cpp_demos_Allocation.cpp in Sources */,
