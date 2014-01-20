@@ -77,6 +77,8 @@ void benchmark()
 {
    for (int nbThread = 1; nbThread < 5; ++nbThread)
    {
+      std::cout << "benchmark " << nbThread << " threads:" << std::endl;
+
       thread_t* threads = new thread_t[nbThread];
       long* results = new long[nbThread];
       for (int i = 0; i < nbThread; ++i)
@@ -89,7 +91,6 @@ void benchmark()
          thread_wait_close(threads[i]); thread_delete(threads[i]);
       }
 
-      std::cout << "benchmark " << nbThread << " threads:" << std::endl;
       long total = 0;
       for (int i = 0; i < nbThread; ++i)
       {
