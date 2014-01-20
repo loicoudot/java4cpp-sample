@@ -33,7 +33,7 @@
 			<plugin>
 				<groupId>com.github.loicoudot.java4cpp</groupId>
 				<artifactId>java4cpp-maven-plugin</artifactId>
-				<version>1.0.3</version>
+				<version>1.0.6</version>
 				<executions>
 					<execution>
 						<phase>install</phase>
@@ -46,7 +46,7 @@
 					<jarFiles>jars/${project.artifactId}-${project.version}.jar;jars/slf4j-api-1.7.5.jar</jarFiles>
 					<outputDirectory>cpp/java4cpp</outputDirectory>
 					<clean>true</clean>
-					<mappingsFile>base-mappings.xml;cpp/slf4j-mappings.xml</mappingsFile>
+					<mappingsFile>base-mappings.xml;slf4j-mappings.xml</mappingsFile>
 					<templatesFile>base-templates.xml;jnistring-templates.xml</templatesFile>
 					<nbThread>1</nbThread>
 				</configuration>
@@ -54,7 +54,7 @@
 					<dependency>
 						<groupId>com.github.loicoudot.java4cpp</groupId>
 						<artifactId>java4cpp-templates</artifactId>
-						<version>1.0.2-SNAPSHOT</version>
+						<version>1.0.2</version>
 					</dependency>
 				</dependencies>
 			</plugin>
