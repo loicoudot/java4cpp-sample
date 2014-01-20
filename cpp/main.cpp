@@ -1,6 +1,5 @@
 #include <iostream>
 #include "java4cpp/jvm_launcher.h"
-#include "java4cpp/java_classes.h"
 #include "allocation.h"
 #include "superclass.h"
 #include "enumeration.h"
