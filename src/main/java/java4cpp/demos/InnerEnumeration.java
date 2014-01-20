@@ -11,5 +11,9 @@ public class InnerEnumeration {
 
     public enum Enumeration {
         ONE, TWO, THREE;
+
+        public static Enumeration identity(Enumeration in) {
+            return in;
+        }
     }
 }

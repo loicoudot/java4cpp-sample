@@ -8,6 +8,7 @@
 #include <iostream>
 #include <stdexcept>
 #include "java4cpp/java_classes.h"
+#include "testsunit.h"
 #include "exceptionHandling.h"
 
 using namespace java4cpp::demos;
@@ -33,9 +34,9 @@ void nullInstance()
 {
    // Create a null instance
    ExceptionClass nullInstance((jobject) NULL);
+   assertThat(nullInstance.getJavaObject()).isNull();
    try
    {
-      std::cout << "Is null instance: " << (nullInstance.getJavaObject() == NULL) << std::endl;
       nullInstance.someMethod();
    } catch (std::exception& e)
    {
@@ -44,9 +45,9 @@ void nullInstance()
 
    // Receiving a null instance
    nullInstance = ExceptionClass::getNullInstance();
+   assertThat(nullInstance.getJavaObject()).isNull();
    try
    {
-      std::cout << "Is null instance: " << (nullInstance.getJavaObject() == NULL) << std::endl;
       nullInstance.someMethod();
    } catch (std::exception& e)
    {

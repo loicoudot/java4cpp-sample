@@ -22,6 +22,7 @@ void allClassloading()
 
 void dynamicClassloader()
 {
+   // try to instanciate unknow class
    std::cout << "not in class path: ";
    try
    {
@@ -33,8 +34,10 @@ void dynamicClassloader()
    }
    std::cout << std::endl;
 
+   // add a jar dynaically in class path
    jvm_addClassPath("../../jars/slf4j-api-1.7.5.jar");
 
+   // retry to instanciate
    std::cout << "now in class path: ";
    try
    {

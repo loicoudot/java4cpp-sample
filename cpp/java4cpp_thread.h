@@ -1,7 +1,7 @@
 #ifndef JAVA4CPPTHREAD_H
 #define JAVA4CPPTHREAD_H
 
-#ifdef WIN32
+#ifdef _WIN32
 #   include <windows.h>
 #   define callback_t                       unsigned long __stdcall
 #   define thread_t                         HANDLE
