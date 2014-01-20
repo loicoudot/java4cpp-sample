@@ -10,7 +10,6 @@
 #include "classloading.h"
 #include "benchmark.h"
 #include "multithread.h"
-#include "containers.h"
 
 int main(void)
 {
@@ -25,7 +24,8 @@ int main(void)
 
    try
    {
-      allLeak();
+      // un-comment for memory leak testing
+      //allLeak();
       allAllocation();
       allSuperclass();
       allEnumeration();
@@ -33,7 +33,6 @@ int main(void)
       allExceptionHandling();
       allClassloading();
       allBenchmark();
-      allContainers();
       allMultithread();
    } catch (std::exception& e)
    {
