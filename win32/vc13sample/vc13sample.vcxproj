@@ -109,8 +109,10 @@
     <ClInclude Include="..\..\cpp\java4cpp\org_slf4j_helpers_BasicMarkerFactory.h" />
     <ClInclude Include="..\..\cpp\java4cpp\org_slf4j_Marker.h" />
     <ClInclude Include="..\..\cpp\java4cpp_thread.h" />
+    <ClInclude Include="..\..\cpp\leak.h" />
     <ClInclude Include="..\..\cpp\multithread.h" />
     <ClInclude Include="..\..\cpp\superclass.h" />
+    <ClInclude Include="..\..\cpp\testsunit.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\cpp\allocation.cpp" />
@@ -141,6 +143,7 @@
     <ClCompile Include="..\..\cpp\java4cpp\jvm_launcher.cpp" />
     <ClCompile Include="..\..\cpp\java4cpp\org_slf4j_helpers_BasicMarkerFactory.cpp" />
     <ClCompile Include="..\..\cpp\java4cpp\org_slf4j_Marker.cpp" />
+    <ClCompile Include="..\..\cpp\leak.cpp" />
     <ClCompile Include="..\..\cpp\main.cpp" />
     <ClCompile Include="..\..\cpp\multithread.cpp" />
     <ClCompile Include="..\..\cpp\superclass.cpp" />
